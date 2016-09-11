@@ -41,6 +41,7 @@ public class MainActivity extends SlidingFragmentActivity
 	MainTab03 tab03;
 	MainTab04 tab04;
 	MainTab05 tab05;
+
 	
 	
 	private ImageButton stepButton;
@@ -160,8 +161,7 @@ public class MainActivity extends SlidingFragmentActivity
 	}
 
 	private void initRightMenu()
-	{
-		
+	{	
 		Fragment leftMenuFragment = new MenuLeftFragment();
 		setBehindContentView(R.layout.left_menu_frame);
 		getSupportFragmentManager().beginTransaction()
@@ -174,7 +174,7 @@ public class MainActivity extends SlidingFragmentActivity
 		menu.setShadowDrawable(R.drawable.shadow);
 		// 设置滑动菜单视图的宽度
 		menu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
-//		menu.setBehindWidth()
+        //menu.setBehindWidth()
 		// 设置渐入渐出效果的值
 		menu.setFadeDegree(0.35f);
 		// menu.setBehindScrollScale(1.0f);
